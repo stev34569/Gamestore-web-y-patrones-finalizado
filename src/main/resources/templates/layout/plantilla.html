@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://wwww.thymeleaf.org" 
+      xmlns:sec="http://thymeleaft.org/extras/spring-security">
+    <head th:fragment="head">
+        <title>Gamestore</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"/>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+        <link rel="stylesheet" th:href="@{/css/menu.css}" />
+    
+    </head>
+    <body>
+        <header th:fragment="header" class="header">
+            <nav class="navbar navbar-expand-sm navbar-primary bg-dark  "> 
+                <div class="container" >
+                    <a th:href="@{/}" class="navbar-brand">Gamestore</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav" sec:authorize="hasRole('ROLE_VENDEDOR')">
+                            <li class="nav-item px-2">
+                                <a class="nav-menu-link nav-link" th:href="@{/cliente/listado}"
+                                   th:text="#{plantilla.clientes}">Clientes</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-menu-link nav-link" th:href="@{/categoria/listado}"
+                                   th:text="#{plantilla.categorias}">Categorias</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-menu-link nav-link" th:href="@{/articulo/listado}"
+                                   th:text="#{plantilla.articulos}">Articulos</a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a th:href="@{/funco/listado}" class="nav-menu-link nav-link"
+                                   sec:authorize="hasRole('ADMIN')">Funkos</a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a th:href="@{/novedades/listado}" class="nav-menu-link nav-link"
+                                   sec:authorize="hasRole('ADMIN')">Novedades</a>
+                            </li>
+                            <li class="nav-menu-item">
+
+                                <a th:href="@{/estrenos/listado}" class="nav-menu-link nav-link"
+                                   sec:authorize="hasRole('ADMIN')">Estrenos</a>
+                            </li>
+                            
+                            <li class="nav-menu-item">
+
+                                <a th:href="@{/videos/listado}" class="nav-menu-link nav-link"
+                                   sec:authorize="hasRole('ADMIN')">Noticia</a>
+                            </li>
+                            
+                            <li class="nav-menu-item">
+                                <a th:href="@{/contacto/listado}" class="nav-menu-link nav-link"
+                                   sec:authorize="hasRole('ADMIN')">Contacto</a>
+                            </li>
+                            
+                        </ul>
+                        <ul sec:authorize="isAuthenticated()" class="navbar-nav ml-auto">
+                            <li class="nav-item mr-3">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-user"></i>
+                                    <span th:text="#{plantilla.bienvenido}">Bievenido:</span>
+                                    <span sec:authentication="name">Usuario</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <form method="POST" th:action="@{/logout}">
+                                    <a href="#" onclick="this.parentNode.submit();" class="nav-link">
+                                        <i class="fas fa-user-times"></i> [[#{plantilla.logout}]]
+                                    </a>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul sec:authorize="isAuthenticated()" class="navbar-nav ml-auto" th:if="${esCliente != null and esCliente}">
+                            <li class="nav-item mr-3">
+                                <a th:href="@{/carrito/listado}" class="nav-link">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span th:text="${cantidadArticulosCarrito}" class="btn btn-danger">Cantidad</span>
+                                </a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header> 
+        
+        
+        <div th:fragment="chat" class="chat">
+
+            <div id="popup" class="overlay" style="text-align: center">
+                <div id="popupBody">
+                    <div class="popupContent">
+                        <!-- Facebook -->
+                        <a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com" role="button"
+                           ><i class="fab fa-facebook-f"></i
+                            ></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"
+                           ><i class="fab fa-twitter"></i
+                            ></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-primary" style="background-color: #ac2bac;" href="https://www.instagram.com/" role="button"
+                           ><i class="fab fa-instagram"></i
+                            ></a>
+
+                        <!-- Github -->
+                        <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/stev34569/Gamestore" role="button"
+                           ><i class="fab fa-github"></i
+                            ></a>
+
+
+                        <!-- Whatsapp -->
+                        <a class="btn btn-primary" style="background-color: #25d366;" href="https://web.whatsapp.com/" role="button"
+                           ><i class="fab fa-whatsapp"></i
+                            ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer th:fragment="footer" class="position-fixed bottom-0 start-0 end-0">
+            <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between  bg-primary">
+        <div class="text-white mb-3 mb-md-0">
+            &COPY Derechos Reservados 2022
+            <a th:href="@{/(lang=es)}" class="text-white" >ES</a> | 
+            <a th:href="@{/(lang=en)}" class="text-white" >EN</a> |
+            <a th:href="@{/(lang=fran)}" class="text-white" >FR</a> 
+        </div>
+        <!-- Copyright -->
+
+        <!-- Right -->
+        <div>
+            <a href="https://www.facebook.com" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="text-white me-4">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://web.whatsapp.com/" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <!-- Right -->
+        </footer>
+    </div> 
+    </body>
+</html>

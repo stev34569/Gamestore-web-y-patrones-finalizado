@@ -1,0 +1,102 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #3BC4D9;
+    color: white;
+    padding: 3rem 2rem;
+}
+header h1{
+    font-size: 4rem;
+    text-align: left;
+}
+
+a {
+  color:white;
+}
+
+#l1, #l2{
+  float:right;
+}
+
+.social-icons li {
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+#l1 li{
+  display:list-item;
+  xlist-style:none;
+}
+
+#l2 li{
+  display: inline;
+}
+
+#l2{
+  position: absolute;
+  top: 0;
+  left: 100rem;
+  height: 8%;
+  width: 100%;
+  margin-left:30px;
+  margin-top:30px;
+}
+
+h2{
+    font-size: 4rem;
+    text-align: center;
+}
+h3{
+    font-size: 2rem;
+    text-align: center;
+}
+section article{
+    transition: box-shadow ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+    
+}
+section article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.8);
+}
+section article h5, section article p{
+    margin: 1rem;
+}
+.forma{
+    padding: 1em;
+    overflow: hidden;
+}
+.item{
+    margin: 3em;
+    padding: 3em;
+    float: left;
+}
+ footer {
+    background-color: #222;
+    padding: 3rem;
+    color: #fff;
+}
+footer section{
+    float: right;
+}
+footer p{
+    margin: 0;
+}
+footer a{
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover{
+    color: cornflowerblue;
+}
+
+
+
+
+

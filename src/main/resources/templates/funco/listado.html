@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+    <head th:replace="layout/plantilla :: head">
+        <title>Tecshop</title>
+    </head>
+    <body>
+        <header th:replace="layout/plantilla :: header" />
+
+        <section th:replace="funco/fragmentosFunco :: botonesAgregar"/>
+        <section th:replace="funco/fragmentosFunco :: agregarFunco"/>
+        <section th:replace="funco/fragmentosFunco :: listadoFunco"/>
+
+        <footer th:replace="layout/plantilla :: footer" />
+    </body>
+</html>

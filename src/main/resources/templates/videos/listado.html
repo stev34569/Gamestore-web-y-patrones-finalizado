@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://wwww.thymeleaf.org" 
+      xmlns:sec="http://thymeleaft.org/extras/spring-security">
+    <head th:replace="layout/plantilla :: head">
+        <title>Gamestore</title>
+    </head>
+    <body>
+        <header th:replace="layout/plantilla :: header"/>
+        <!-- Carousel -->
+
+
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+            </div>
+
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/imagenes/25.jpg" alt="Video juego" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/5.jpg" alt="Video juego" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/9.jpg" alt="Video juego" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/10.jpg" alt="Video juego" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/6.jpg" alt="Video juego" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/17.jpg" alt="Video juego" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Carousel -->
+        <div class="row">
+                <div class="col-3 bg-secondary text-white">
+                    <img src="/imagenes/singapur.jpg" class="img-fluid  w-100"/>
+                </div>
+                <div class="col-9 bg-secondary text-white">
+                   <h1>Entradas para The International - Sábado, 13 de agosto </h1>
+                   Las entradas se venderán el 13 de agosto en una sola etapa que comenzará a las 4 de la mañana (hora peninsular),
+                   con un límite de 5 entradas por cliente para cada día del torneo.
+                   Los clientes con domicilio en Singapur que compren entradas tendrán la opción de recogerlas en taquilla o recibirlas por mensajería. 
+                   Todos los demás clientes deberán recoger sus entradas en taquilla.
+                </div>
+            </div>
+        <br>
+           
+        <div class="row">
+                <div class="col-3 bg-secondary text-white">
+
+
+                   <img src="/imagenes/gta.jpg" class="img-fluid  w-100"/>
+                </div>
+                <div class="col-9 bg-secondary text-white">
+                   
+                   <h1>GTA 6 quiere ser "una referencia para la saga, la industria y el entretenimiento", sostiene Take 2 </h1>
+                   <p>Poco se sabe oficialmente sobre el nuevo Grand Theft Auto, pese a que las primeras filtraciones ya bosquejan los primeros detalles de lo que será esta sexta entrega. 
+                       Take-Two Interactive, la empresa propietaria de Rockstar Games, ha mencionado el producto durante la presentación de sus resultados financieros</p>
+                </div>
+            </div>
+        <br>
+            <div class="row">
+                <div class="col-3 bg-secondary text-white">
+
+
+                    <img src="/imagenes/ark.jpg" class="img-fluid  w-100"/>
+
+                </div>
+                <div class="col-9 bg-secondary text-white">
+                    
+                    
+                    <h1>Community Crunch 328: ¡Fecha de transferencia de Fjordur, Community Corner y más!</h1>
+                    <p>¡Saludos Sobrevivientes y bienvenidos a otra edición del Community Crunch!
+                        ¡Esta semana estamos echando un vistazo a algunos contenidos cuidadosamente seleccionados de 
+                        la comunidad en el Rincón de la Comunidad y preparándonos para abrir transferencias en Fjordur!</p>
+                </div>
+            </div>
+            <br>
+
+        <div class="row">
+                <div class="col-3 bg-secondary text-white">
+
+
+                    <img src="/imagenes/row.jpg" class="img-fluid  w-100"/>
+
+                </div>
+                <div class="col-9 bg-secondary text-white">
+                    
+                    
+                    <h1>El nuevo tráiler de Saints Row nos presenta su mundo, actividades y personajes</h1>
+                   El regreso de Saints Row, una de las sagas más populares entre los amantes del género sandbox, 
+                   está previsto para el próximo 23 de agosto en PC, PS5, PS4, Xbox Series X|S y Xbox One. 
+                   Apenas una semana nos separa de su lanzamiento, así que los canales oficiales del título están empezando a compartir nuevos materiales 
+                   para ponernos los dientes largos, como es el caso del nuevo tráiler subtitulado al español que puedes encontrar sobre estas líneas.
+                </div>
+            </div>
+            <br>
+        <div class="row">
+                <div class="col-3 bg-secondary text-white">
+
+
+                   <img src="/imagenes/project.png" class="img-fluid  w-100"/>
+                </div>
+                <div class="col-9 bg-secondary text-white">
+                    
+                    <h1>41.73 lista de cambios compilada, que también incluye 41.72 de la rama inestable </h1>
+                   <h2>- Se ha añadido la opción de servidor MapRemotePlayerVisibility para multijugador.</h2>
+                   <p>1 = Los jugadores remotos no son visibles en el mapa del juego
+                       <br>
+                    2 = Los jugadores remotos en la misma facción o que comparten una casa de seguridad son visibles
+                    <br>
+                    3 = Los jugadores remotos siempre están visibles</p>
+                    
+
+
+                </div>
+            </div>
+                <br>
+                <div class="row">
+                    <div class="col-3 bg-secondary text-white">
+                        <img src="/imagenes/wolrd.jpg" class="img-fluid  w-100"/>
+
+                    </div>
+                    <div class="col-9 bg-secondary text-white">
+                        
+                        <h1>Actualización 0.11.7: Astillero de Puerto Rico </h1>
+                        <table class="table table-hover table-warning">
+                            <thead>
+                                <tr>
+                                    <th>Asia</th>
+                                    <th>Cis</th>
+                                    <th>Eu</th>
+                                    <th>NA</th>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                <tr>
+                                    <td>2022-08-11 05:00—08:00 UTC+8</td>
+                                    <td>2022-08-10 05:00—10:00 MSK (UTC+3)</td>
+                                    <td>2022-08-11 07:00—10:00 CEST (UTC+2)</td>
+                                    <td>2022-08-10 03:00 AM—06:00 AM PT (UTC–7)</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-08-10 21:00—23:59 UTC</td>
+                                    <td>2022-08-10 02:00—07:00 UTC</td>
+                                    <td>2022-08-11 05:00—08:00 UTC</td>
+                                    <td>2022-08-10 10:00—13:00 UTC</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Ten en cuenta que el nuevo registro para los jugadores de Steam en la región CIS se ha detenido. 
+                            Los nuevos jugadores de Steam ahora elegirán cualquier otra región para el registro de la cuenta.</p>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="row">
+                    <div class="col-3 bg-secondary text-white">
+
+
+                        <img src="/imagenes/throne.jpg" class="img-fluid  w-100"/>
+                    </div>
+                    
+                    <div class="col-9 bg-secondary text-white">
+                        
+                        <h1>El remake de Highlander con Henry Cavill dirigido por el director de John Wick está “más cerca que nunca”</h1>
+                        <p>Chad Stahelski (John Wick) está inmerso en las
+                   primeras etapas de producción de Highlander 
+                   (Los Inmortales en España), un remake de la película original de Russell Mulcahy (1986), 
+                   además de trabajar en la adaptación de Ghost of Tsushima a la gran pantalla. Sin entrar en 
+                   demasiados detalles, Stahelski ha asegurado que “están más cerca que nunca” de lo que quieren
+                   para la película, 
+                   y que “todo va bien” hasta el momento.</p>
+                    </div>
+                </div>
+                <br>
+                    
+                <div class="row">
+                    <div class="col-3 bg-secondary text-white">
+
+
+                        <img src="/imagenes/american.jpg" class="img-fluid  w-100"/>
+                    </div>
+                    <div class="col-9 bg-secondary text-white">
+
+                            
+                            <h1>American Truck Simulator </h1>
+                            <h2>Texas - Agriculture</h2>
+                            <p>La relación entre los camiones y la agricultura es algo que algunas personas pueden encontrar trivial, 
+                                sin embargo, es importante darse cuenta de lo crucial que es esta cooperación. Atrás quedaron los días de la agricultura a pequeña escala en los patios traseros, 
+                                ya que las tierras dedicadas modernas están creciendo en tamaño rápidamente. 
+                                ¿Y qué mejor lugar para mirar como un ejemplo de este desarrollo que el estado de Texas, que tiene 127 millones de acres de tierras agrícolas?</p>
+
+                        
+                    </div>
+                </div>
+
+        <footer th:replace="layout/plantilla :: footer"/>
+
+    </body>
+</html>         

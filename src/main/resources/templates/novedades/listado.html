@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+    <head th:replace="layout/plantilla :: head">
+        <title>Gamestore</title>
+    </head>
+    <body>
+        <header th:replace="layout/plantilla :: header"></header>
+
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            </div>
+
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" text-dark>
+                    <img src="/imagenes/harry1.jpg" alt="Video juego" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 >Harry Potter: Hogwarts Legacy</h5>
+                        <p>Hogwarts Legacy es un RPG de acción en mundo abierto desarrollado por Avalanche Software 
+                            protagonizado por un estudiante del Colegio Hogwarts de Magia y Hechicería a comienzos del siglo XIX.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/resident1.jpg" alt="Video juego" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Resident Evil</h5>
+                        <p> se centra en enfrentar a 6 jugadores en un modo de todos contra todos en el 
+                            que aquel que consiga la mayor puntuación tras 5 minutos será quien se alce con la victoria.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/ghotam.jpg" alt="Video juego" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Batman Gotham Knights</h5>
+                        <p>Gotham Knights, un videojuego de rol, acción y aventura en tercera persona ambientado en el universo de 
+                            Batman donde el Cruzado de la Capa, aparentemente, se encuentra muerto. Una ausencia que la ciudad de Wayne Enterprises.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/God.jpg" alt="Video juego" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>God of War Ragnarok</h5>
+                        <p> La amenaza del Ragnarök está cada vez más cerca: "Kratos y Atreus deben elegir entre su propia seguridad y la de los reinos"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="container overflow-hidden">
+            <div class="page_ctn">
+                <div class="page_content">
+                    <div class="bucket popularwishlist">
+                        <h2>Lo juegos más deseado por la comunidad    
+                            <span class="right">
+                                <a class="btnv6_white_transparent btn_small btn_uppercase" href="https://store.steampowered.com//search/?filter=popularwishlist&os=win">
+                                </a>
+                            </span>
+                        </h2>
+                        <div class="store_horizontal_autoslider store_capsule_container_scrolling bucket_contents">
+                            <article class="post">
+                                <a  href="https://store.steampowered.com/app/1372880/The_Day_Before/?snr=1_239_1700__1702">
+                                    <div class="capsule headerv5">
+                                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1372880/header_292x136.jpg?t=1656516831"></div>
+                                    <div class="discount_block empty discount_block_inline">
+                                        <p><h2 style="color:black">Ofertas de Invierno.</h2></p>
+                                        <p>
+                                            God of War: Ragnarok es la secuela del aclamado God of War (2018) y presenta un videojuego de acción y aventura de gran factura donde Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas mientras las fuerzas asgardianas se preparan para la batalla profetizada que supondrá el fin del mundo. Por el camino, explorarán paisajes míticos increíbles y se enfrentarán a temibles enemigos, como monstruos y dioses nórdicos. La amenaza del Ragnarök está cada vez más cerca: "Kratos y Atreus deben elegir entre su propia seguridad y la de los reinos". A cargo del proyecto vuelve a estar SIE Santa Monica Studio bajo supervisión de PlayStation Studios. El videojuego se lanza en PS5 y PS4, sin que haya trascendido aún un posible estreno en PC. Es de esperar que sus responsable saquen partido no solo a las bondades de hardware de PlayStation 5, sino a algunas de las funciones del DualSense, como los gatillo adaptables o la retroalimentación háptica, aunque de momento tales novedades no han sido detalladas.
+                                        </p>
+                                        <p><h3 style="color:black">$ 45.12</h3></p>
+                                    </div>
+
+                                </a>
+
+                            </article>
+                        </div>
+                        <div class="store_horizontal_autoslider store_capsule_container_scrolling bucket_contents">
+
+                            <a  href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/?snr=1_239_1700__1702">
+                                <div class="capsule headerv5">
+                                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1030300/header_292x136.jpg?t=1572306963">
+                                </div>
+                                <div class="discount_block empty discount_block_inline">
+                                    <p><h2 style="color:black">Ofertas de Invierno.</h2></p>
+                                    <p>
+                                        God of War: Ragnarok es la secuela del aclamado God of War (2018) y presenta un videojuego de acción y aventura de gran factura donde Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas mientras las fuerzas asgardianas se preparan para la batalla profetizada que supondrá el fin del mundo. Por el camino, explorarán paisajes míticos increíbles y se enfrentarán a temibles enemigos, como monstruos y dioses nórdicos. La amenaza del Ragnarök está cada vez más cerca: "Kratos y Atreus deben elegir entre su propia seguridad y la de los reinos". A cargo del proyecto vuelve a estar SIE Santa Monica Studio bajo supervisión de PlayStation Studios. El videojuego se lanza en PS5 y PS4, sin que haya trascendido aún un posible estreno en PC. Es de esperar que sus responsable saquen partido no solo a las bondades de hardware de PlayStation 5, sino a algunas de las funciones del DualSense, como los gatillo adaptables o la retroalimentación háptica, aunque de momento tales novedades no han sido detalladas.
+                                    </p>
+                                    <p><h3 style="color:black">$ 32.12</h3></p>
+                                </div>
+                            </a>
+                            <a  href="https://store.steampowered.com/app/1716740/Starfield/?snr=1_239_1700__1702">
+                                <div class="capsule headerv5"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1716740/header_292x136.jpg?t=1655219857">
+                                </div>
+                                <div class="discount_block empty discount_block_inline">
+                                    <p><h2 style="color:black">Ofertas de Invierno.</h2></p>
+                                    <p>
+                                        God of War: Ragnarok es la secuela del aclamado God of War (2018) y presenta un videojuego de acción y aventura de gran factura donde Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas mientras las fuerzas asgardianas se preparan para la batalla profetizada que supondrá el fin del mundo. Por el camino, explorarán paisajes míticos increíbles y se enfrentarán a temibles enemigos, como monstruos y dioses nórdicos. La amenaza del Ragnarök está cada vez más cerca: "Kratos y Atreus deben elegir entre su propia seguridad y la de los reinos". A cargo del proyecto vuelve a estar SIE Santa Monica Studio bajo supervisión de PlayStation Studios. El videojuego se lanza en PS5 y PS4, sin que haya trascendido aún un posible estreno en PC. Es de esperar que sus responsable saquen partido no solo a las bondades de hardware de PlayStation 5, sino a algunas de las funciones del DualSense, como los gatillo adaptables o la retroalimentación háptica, aunque de momento tales novedades no han sido detalladas.
+                                    </p>
+                                    <p><h3 style="color:black">$ 29.9</h3></p>
+                                </div>
+                            </a>
+                            <a  href="https://store.steampowered.com/app/1260320/Party_Animals/?snr=1_239_1700__1702">
+                                <div class="capsule headerv5"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1260320/header_292x136.jpg?t=1657086396">
+                                </div>
+                                <div class="discount_block empty discount_block_inline">
+                                    <p><h2 style="color:black">Ofertas de Invierno.</h2></p>
+                                    <p>
+                                        God of War: Ragnarok es la secuela del aclamado God of War (2018) y presenta un videojuego de acción y aventura de gran factura donde Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas mientras las fuerzas asgardianas se preparan para la batalla profetizada que supondrá el fin del mundo. Por el camino, explorarán paisajes míticos increíbles y se enfrentarán a temibles enemigos, como monstruos y dioses nórdicos. La amenaza del Ragnarök está cada vez más cerca: "Kratos y Atreus deben elegir entre su propia seguridad y la de los reinos". A cargo del proyecto vuelve a estar SIE Santa Monica Studio bajo supervisión de PlayStation Studios. El videojuego se lanza en PS5 y PS4, sin que haya trascendido aún un posible estreno en PC. Es de esperar que sus responsable saquen partido no solo a las bondades de hardware de PlayStation 5, sino a algunas de las funciones del DualSense, como los gatillo adaptables o la retroalimentación háptica, aunque de momento tales novedades no han sido detalladas.
+                                    </p>
+                                    <p><h3 style="color:black">$ 91.23</h3></p>
+                                </div>
+                            </a>
+                            <a  href="https://store.steampowered.com/app/1643320/STALKER_2_Heart_of_Chornobyl/?snr=1_239_1700__1702"><div class="capsule headerv5">
+                                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1643320/header_292x136.jpg?t=1655252279">
+                                </div>
+                                <div class="discount_block discount_block_inline no_discount" data-price-final="2990000">
+                                    <div class="discount_prices"><div class="discount_final_price">
+                                            <p><h2 style="color:black">Ofertas de Invierno.</h2></p>
+                                            <p>
+                                               God of War: Ragnarok es la secuela del aclamado God of War (2018) y presenta un videojuego de acción y aventura de gran factura donde Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas mientras las fuerzas asgardianas se preparan para la batalla profetizada que supondrá el fin del mundo. Por el camino, explorarán paisajes míticos increíbles y se enfrentarán a temibles enemigos, como monstruos y dioses nórdicos. La amenaza del Ragnarök está cada vez más cerca: "Kratos y Atreus deben elegir entre su propia seguridad y la de los reinos". A cargo del proyecto vuelve a estar SIE Santa Monica Studio bajo supervisión de PlayStation Studios. El videojuego se lanza en PS5 y PS4, sin que haya trascendido aún un posible estreno en PC. Es de esperar que sus responsable saquen partido no solo a las bondades de hardware de PlayStation 5, sino a algunas de las funciones del DualSense, como los gatillo adaptables o la retroalimentación háptica, aunque de momento tales novedades no han sido detalladas.
+                                            </p>
+                                            <p><h3 style="color:black">$ 30.24</h3></p>
+                                        </div>                                        
+                                    </div> 
+                                </div>
+                            </a>						
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div th:replace="layout/plantilla :: footer"></div>
+    </body>
+</html>
